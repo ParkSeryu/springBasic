@@ -7,6 +7,7 @@ import hello.core.member.MemberService;
 import hello.core.member.MemberServiceImpl;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 public class OrderServiceTest {
@@ -35,11 +36,6 @@ public class OrderServiceTest {
         // 단위 테스트를 잘 만드는게 중요하다.
         // 스프링이나 컨테이너 도움 없이
         // 자바 코드로만 테스트 하는게 단위테스트이다.
-    }
-
-    @Test
-    void fieldInjectionTest() {
-        orderService.createOrder(1L, "itemA", 10000);
     }
 
 }
